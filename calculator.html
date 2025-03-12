@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<hteml> 
+  <head>
+    <link rel="stylesheet" href="calc.css">
+    <title>CalculatorUpdate</title>
+  </head>
+  <body>
+  <p class = "js-Display"></p>
+    <button 
+    onclick = 
+    "
+    updateCalculation('1');
+    localStorage.setItem('calculator', calculator);
+    "
+    class = "nums gray-button"
+    >1</button>
+    <button onclick = "
+    updateCalculation('2');
+    localStorage.setItem('calculator', calculator);
+    "
+    class = "nums gray-button"
+    >2</button>
+    <button onclick = 
+    "
+    updateCalculation('3');
+    localStorage.setItem('calculator', calculator);
+    "
+    class = "nums gray-button"
+    >3</button>
+    <button onclick = 
+    "
+    updateCalculation(' + ');
+    localStorage.setItem('calculator', calculator);
+    "
+    class = "nums operation-button"
+    >+</button>
+  <p>
+    <button onclick = 
+    "
+    updateCalculation('4');
+    localStorage.setItem('calculator', calculator);
+    "
+    class = "nums gray-button"
+    >4</button>
+    <button onclick = 
+    "
+    updateCalculation('5');
+    localStorage.setItem('calculator', calculator);
+    "
+    class = "nums gray-button"
+    >5</button>
+    <button onclick = 
+    "
+    updateCalculation('6');
+    localStorage.setItem('calculator', calculator);
+    "
+    class = "nums gray-button"
+    >6</button>
+    <button onclick = 
+    "
+    updateCalculation(' - ');
+    localStorage.setItem('calculator', calculator);
+    "
+    class = "nums operation-button"
+    >-</button>
+  </p>
+  <p>
+    <button onclick = 
+    "
+    updateCalculation('7');
+    localStorage.setItem('calculator', calculator);
+    "
+    class = "nums gray-button"
+    >7</button>
+    <button onclick = 
+    "
+    updateCalculation('8');
+    localStorage.setItem('calculator', calculator);
+    "
+    class = "nums gray-button"  
+    >8</button>
+    <button onclick = 
+    "
+    updateCalculation('9');
+    localStorage.setItem('calculator', calculator);
+    "
+    class = "nums gray-button"
+    >9</button>
+    <button onclick = 
+    "
+    updateCalculation(' * ');
+    localStorage.setItem('calculator', calculator);
+    "
+    class = "nums operation-button"
+    >x</button>
+  </p>
+    <button onclick = 
+    "
+    updateCalculation(' 0 ');
+    localStorage.setItem('calculator', calculator);
+    "
+    class = "nums"
+    >0</button>
+    <button onclick = 
+    "
+    updateCalculation('.');
+    localStorage.setItem('calculator', calculator);
+    "
+    class = "nums"
+    >.</button>
+    <button onclick = 
+    "
+    calculator = eval(calculator);
+    localStorage.setItem('calculator', calculator);
+    console.log(calculator);
+    document.querySelector('.js-Display').innerHTML = calculator;
+    "
+    class = "nums"
+    >=</button>
+    <button onclick = 
+    "
+    updateCalculation(' / ');
+    localStorage.setItem('calculator', calculator);
+    "
+    class = "nums operation-button"
+    >÷</button>
+  <p>
+    <button onclick = 
+    "
+    calculator = '';
+    localStorage.setItem('calculator', calculator);
+    //localStorage.removeItem('calculator');
+    document.querySelector('.js-Display').innerHTML = calculator;
+    "
+    class = "reset"
+    >Reset</button>
+  </p>
+    <script src = calc.js>
+      
+    </script>
+  </body>
+</html>
